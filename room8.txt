@@ -1,0 +1,18 @@
+# 0. room id
+$id:8
+# 1. picture of room
+$picture:room8.jpg
+# 2. list of items
+$items
+apple:3
+hourglass:1
+$items_end
+# 3. room description
+$description:Room 8
+# 4. rooms connected
+$east:-1
+$north:11
+$south:7
+$west:-1
+# 5. is it locked?
+$locked:false

@@ -1,0 +1,11 @@
+apple
+
+
+//json representation:
+Edible [
+	name: apple,
+	name: orange
+]
+Usable [
+	name:
+]
