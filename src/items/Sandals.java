@@ -5,7 +5,7 @@ public class Sandals implements Wearable{
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return null;
+		return "A new pair of sandals. It's in good condition and looks comfortable.";
 	}
 
 	@Override

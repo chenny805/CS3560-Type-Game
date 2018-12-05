@@ -1,16 +1,16 @@
 package rooms;
-import items.*;
 
-public abstract class Room {
-	private String description = "This is the abstract Room class.";
+import items.Item;
+
+public class NorthRoom extends Room {
+	private String description = "This is the north room.";
 	private Room north;
 	private Room south;
 	private Room east;
 	private Room west;
 	private Item[] items;
-	//array items 
-	//array of their accessibility
 	
+	public NorthRoom() {}
 	
 	public String getDescription() {
 		return description;

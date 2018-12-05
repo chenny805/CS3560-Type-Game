@@ -5,7 +5,7 @@ import items.*;
 public class PlayerState {
 	private Item[] inventory = new Item[10];
 	private int health;
-	private String name;
+//	private String name;
 	private int amount; //Keeps track of the first most location to add an item
 	
 	public void addToInventory(Item i) {
@@ -76,12 +76,12 @@ public class PlayerState {
 			health = 0;
 	}
 	
-	public void setName(String s) {
-		name = s;
-	}
-	
-	public String getName() {
-		return name;
-	}
+//	public void setName(String s) {
+//		name = s;
+//	}
+//	
+//	public String getName() {
+//		return name;
+//	}
 	
 }

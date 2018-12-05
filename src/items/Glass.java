@@ -5,7 +5,7 @@ public class Glass implements Passive {
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return null;
+		return "A piece of glass with jagged edges. Relatively good condition and you can easily see through it.";
 	}
 
 	@Override

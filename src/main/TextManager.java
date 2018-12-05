@@ -75,15 +75,17 @@ public class TextManager {
 	}
 	
 	public static String[] parseInput(String s) {
-		print("\nTokens:\n");
+//		print("\nTokens:\n");
+		enter();
 		String[] words = s.split("\\s");
 		//temp: print separated words
 		//all input: toLowerCase!
+		print("    >");
 		for (int i = 0; i < words.length; i++) {
 			words[i] = words[i].toLowerCase();
-			print(words[i]);
-			enter();
+			print(words[i] + " ");
 		}
+		enter();
 		String[] command_and_object = interpret(words);
 		return command_and_object;
 	}
@@ -104,25 +106,31 @@ public class TextManager {
 		//array to return with the command and value strings
 		String[] save = {"No command found.","No value found."};
 		//check each token to see if it is a command or value, and save them if so.
-		for(int i = 0; i < words.length; i++) {
-			if(!command_found) {
-				for(int j = 0; j < commands_list.length; j++) {
-					if(words[i].equals(commands_list[j])) {
-						save[0] = words[i];
-						command_found = true;
-					}
-				}
-			}
-			if(!value_found ) {
-				for(int j = 0; j < values_list.length; j++) {
-					if(words[i].equals(values_list[j])) {
-						save[1] = words[i];
-						value_found = true;
-					}
-				}
-			}
-		}
-//		String[] s = {"eat","apple"};
+//		for(int i = 0; i < words.length; i++) {
+//			if(!command_found) {
+//				for(int j = 0; j < commands_list.length; j++) {
+//					if(words[i].equals(commands_list[j])) {
+//						save[0] = words[i];
+//						command_found = true;
+//					}
+//				}
+//			}
+//			if(!value_found ) {
+//				for(int j = 0; j < values_list.length; j++) {
+//					if(words[i].equals(values_list[j])) {
+//						save[1] = words[i];
+//						value_found = true;
+//					}
+//				}
+//			}
+//		}
+try		{
+save[0] = words[0];
+	} catch(Exception e) {}
+try {
+save[1] = words[1];
+} catch(Exception e) {}
+		
 		System.out.println(Arrays.toString(save));
 		return save;
 	}

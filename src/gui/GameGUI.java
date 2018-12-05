@@ -8,6 +8,7 @@ public class GameGUI extends JFrame {
   //accessible components initialized here 
   public JTextField command_line = new JTextField();
   public JTextArea output = new JTextArea();
+  public JTextArea room_info = new JTextArea();
   public boolean textInBuffer = false;
   public String bufferText = "null";
 
@@ -141,14 +142,27 @@ public class GameGUI extends JFrame {
 //    map.setBackground(Color.orange.darker());
     map.setBackground(Color.black);
     hud.add(map);
-    	//room_description
+    
+    	//room_description (Panel)
     JPanel room_description = new JPanel();
     room_description.setLayout(null);
     room_description.setLocation(0, stat_display.getHeight()+map.getHeight());
     room_description.setSize(hud_width,panelHeight/3);
-//    room_description.setBackground(Color.orange.brighter().brighter());
-    room_description.setBackground(Color.black);
+    room_description.setBackground(Color.white);
     hud.add(room_description);
+    
+    	//room_description
+    room_info.setLayout(null);
+    room_info.setLocation(5, 5);
+    room_info.setSize(room_description.getWidth()-10,room_description.getHeight()-10);
+    room_info.setFont(console_font);
+    room_info.setLineWrap(true);
+    room_info.setWrapStyleWord(true);
+    room_info.setEditable(false);
+    room_info.setBackground(Color.black);
+    room_info.setForeground(Color.WHITE);
+    room_description.add(room_info);
+    
     
     
     setVisible(true); // display this frame

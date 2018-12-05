@@ -5,7 +5,8 @@ public class Hourglass  implements Passive {
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return null;
+		return "A large hourglass made of wood and glass. The sand is all on one side,"
+				+ " somebody must of lost it.";
 	}
 
 	@Override

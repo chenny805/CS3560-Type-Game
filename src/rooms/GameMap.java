@@ -1,34 +1,69 @@
 package rooms;
 
+import main.*;
+
 public class GameMap {
-	private Room[] rooms;
 	
-	private int currentRoom; // it holds the id of the room
+	//initialize all the rooms you're including
+	Room spawn = new StartRoom();
+	Room n1 = new NorthRoom();
+	//keep track of the current room
+	public Room current_room;
 	
 	public GameMap() {
-		rooms = new Room[16];
-		RoomLoader loader = new RoomLoader();
-		for(int i = 0; i <= 15; i++)
-			rooms[i] = loader.loadRoom("room" + i + ".txt");
-		currentRoom = 0;
+		//when initialized, set the spawn room and build the map
+		current_room = spawn;
+		couple(spawn, n1, "north");
 	}
 	
-	public Room moveToRoom(int direction) {
-		int nextRoomId = rooms[currentRoom].getNextRoomId(direction);
-		if(nextRoomId == Room.NO_ROOM) {
-			System.out.println("You can't go to that direction!");
-			return rooms[currentRoom];
-		}
-		if(rooms[nextRoomId].isLocked()) {
-			System.out.println(rooms[nextRoomId].description + " is locked!");
-			return rooms[currentRoom];
-		}
-		currentRoom = nextRoomId;
-		return rooms[nextRoomId];
+	public void moveRoom(String r) {
+		Room destination;
+	    switch(r) {
+	    	case "east":
+	    	case "e":
+	    		destination = current_room.goEast();
+	    		break;
+	    	case "north":
+	    	case "n":
+	    		destination = current_room.goNorth();
+	    		break;
+	    	case "south":
+	    	case "s":
+	    		destination = current_room.goSouth();
+	    		break;
+	    	case "west":
+	    	case "w":
+	    		destination = current_room.goWest();
+	    		break;
+	    	default:
+	    		destination = current_room;
+	    }
+	    if(destination != null) {
+	    	current_room = destination;
+	    	TextManager.print(current_room.getDescription());
+	    }
+	    else TextManager.print("You can't go that way!");
 	}
 	
-	public Room getCurrentRoom() {
-		return rooms[currentRoom];
+	private void couple(Room first, Room second, String direction) {
+		switch(direction) {
+		case "north":
+			first.setNorth(second);
+			second.setSouth(first);
+			break;
+		case "south":
+			first.setSouth(second);
+			second.setNorth(first);
+			break;
+		case "east":
+			first.setEast(second);
+			second.setWest(first);
+			break;
+		case "west":
+			first.setWest(second);
+			second.setEast(first);
+			break;
+		}
 	}
 	
 }
