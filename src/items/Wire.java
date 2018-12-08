@@ -14,4 +14,10 @@ public class Wire  implements Usable {
 		
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -1,6 +1,7 @@
 package main;
 import gui.*;
 import items.*;
+import rooms.RoomLoader;
 
 public class GameDriver {
 	static GameState gs = GameState.getInstance();
@@ -47,7 +48,7 @@ public class GameDriver {
 			case "mv":
 				//askPlayer();
 				gs.gm.moveRoom(object);
-				roomNumber = gs.gm.current_room.getDescription(); // roomNumber = "Room 1"
+				String roomNumber = gs.gm.current_room.getDescription(); // roomNumber = "Room 1"
 				String fileName = findFileName(roomNumber);
 				RoomLoader rl = new RoomLoader();
 				rl.loadRoom(fileName);

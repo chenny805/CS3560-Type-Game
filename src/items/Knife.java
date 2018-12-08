@@ -8,4 +8,9 @@ public class Knife implements Weapon{
 		return null;
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

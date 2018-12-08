@@ -13,5 +13,10 @@ public class Sandals implements Wearable{
 		// TODO Auto-generated method stub
 		
 	}
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

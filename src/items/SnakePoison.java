@@ -13,5 +13,11 @@ public class SnakePoison  implements Usable {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
