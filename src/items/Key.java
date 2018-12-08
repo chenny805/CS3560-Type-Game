@@ -15,4 +15,10 @@ public class Key implements Usable {
 		
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Key";
+	}
+
 }

@@ -20,4 +20,10 @@ public class Diamond implements Passive {
 		
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Diamond";
+	}
+
 }

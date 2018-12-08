@@ -9,4 +9,10 @@ public class Knife implements Weapon{
 				+ "abandoned it.";
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Knife";
+	}
+
 }

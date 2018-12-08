@@ -9,4 +9,10 @@ public class Arrow implements Weapon{
 				+ "good condition.";
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Arrow";
+	}
+
 }

@@ -9,4 +9,10 @@ public class Stick implements Weapon{
 				+ "it has been sanded by previous owner.";
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Stick";
+	}
+
 }

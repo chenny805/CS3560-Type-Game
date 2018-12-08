@@ -9,4 +9,10 @@ public class WoodenBow implements Weapon{
 				+ " tape around different areas. ";
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Wooden Bow";
+	}
+
 }

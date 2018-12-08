@@ -21,4 +21,10 @@ public class HouseOrnament  implements Passive {
 		
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "House Ornament";
+	}
+
 }

@@ -21,4 +21,10 @@ public class Coin  implements Passive {
 		
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Coin";
+	}
+
 }

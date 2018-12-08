@@ -14,4 +14,10 @@ public class Rope  implements Usable {
 		
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Rope";
+	}
+
 }

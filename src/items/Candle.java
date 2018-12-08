@@ -1,6 +1,6 @@
 package items;
 
-public class Candle  implements Usable {
+public class Candle implements Usable {
 
 	@Override
 	public String getDescription() {
@@ -12,6 +12,12 @@ public class Candle  implements Usable {
 	public void use() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Candle";
 	}
 
 }

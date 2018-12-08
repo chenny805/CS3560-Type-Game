@@ -1,6 +1,6 @@
 package items;
 
-public class Goldbar  implements Passive{
+public class Goldbar implements Passive{
 
 	@Override
 	public String getDescription() {
@@ -18,6 +18,12 @@ public class Goldbar  implements Passive{
 	public void deactivate() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Goldbar";
 	}
 
 }

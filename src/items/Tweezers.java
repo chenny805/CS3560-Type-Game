@@ -14,4 +14,10 @@ public class Tweezers  implements Usable {
 		
 	}
 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Tweezers";
+	}
+
 }
