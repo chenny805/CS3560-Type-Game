@@ -1,0 +1,15 @@
+You encountered a guard! Prepare to Fight.
+
+You will be prompted with one of 3 actions:
+1. Attacked
+2. Blocking
+3. Exposed
+
+Each Action has a corresponding successful response:
+1. 'Block' to stop an attack. Failure to do so will lose 1 HP.
+2. 'Pause' to catch your breath. Attacking or Blocking unecessarily will 
+	tire you, making you unable to react to the next Action.
+3. 'Attack' to hurt the enemy. A failed attack will leave you less time 
+	to react to the next Action.
+	
+Type 'ready' to begin.

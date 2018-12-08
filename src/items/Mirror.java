@@ -5,7 +5,7 @@ public class Mirror  implements Passive {
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return "A small personal mirror. It's relatively clean and well kept. ";
+		return null;
 	}
 
 	@Override

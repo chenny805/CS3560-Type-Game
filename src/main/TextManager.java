@@ -9,8 +9,8 @@ import java.util.Arrays;
 public class TextManager {
 	static GameState gs = GameState.getInstance();
 	static GameGUI ui = new GameGUI();
-	static int defaultTextSpeed = 25;
-	static int textSpeedModifier = 25;
+	static int defaultTextSpeed = 1;
+	static int textSpeedModifier = 1;
 	
 	//constructor
 	public TextManager() {

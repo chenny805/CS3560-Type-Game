@@ -5,7 +5,7 @@ public class Diamond implements Passive {
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return "Decent sized piece of diamond. It's flat on many sides, might have been dropped by another traveler.";
+		return null;
 	}
 
 	@Override

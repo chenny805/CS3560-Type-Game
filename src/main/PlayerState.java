@@ -8,6 +8,10 @@ public class PlayerState {
 //	private String name;
 	private int amount; //Keeps track of the first most location to add an item
 	
+	public PlayerState() {
+		health = 100;
+	}
+	
 	public void addToInventory(Item i) {
 		inventory[amount] = i;
 		amount++;
@@ -33,7 +37,12 @@ public class PlayerState {
 	}
 	
 	public String getInventory() {
-		return "";
+		String str = "";
+		for(int i=0; i<10; i++) {
+			if(inventory[i] != null)
+				str += "[" + inventory[i].getName() + "] ";
+		}
+		return str;
 	}
 	
 	public void eat(Edible food) {
@@ -74,6 +83,10 @@ public class PlayerState {
 		health = health - num;
 		if(health < 1)
 			health = 0;
+	}
+	
+	public int getHealth() { 
+		return health;
 	}
 	
 //	public void setName(String s) {

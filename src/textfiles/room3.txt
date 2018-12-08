@@ -1,0 +1,10 @@
+# 2. list of items
+$items
+wire:2
+potatoe:3
+soda:1
+$items_end
+# 3. room description
+$description:Room 3
+# 5. is it locked?
+$locked:false

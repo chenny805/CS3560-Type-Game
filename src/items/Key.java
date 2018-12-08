@@ -5,8 +5,7 @@ public class Key implements Usable {
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return "A large key made of copper. It's very rusty and dirty. "
-				+ "Must have been used for a long period of time.";
+		return null;
 	}
 
 	@Override

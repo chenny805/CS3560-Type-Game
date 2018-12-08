@@ -1,0 +1,11 @@
+# 2. list of items
+$items
+snakePoison:5
+carrot:1
+sandles:1
+mirror:1
+$items_end
+# 3. room description
+$description:Room 6
+# 5. is it locked?
+$locked:false

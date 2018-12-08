@@ -1,0 +1,9 @@
+# 2. list of items
+$items
+goldbar:1
+houseOrnament:1
+$items_end
+# 3. room description
+$description:Room 4
+# 5. is it locked?
+$locked:false

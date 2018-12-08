@@ -1,0 +1,10 @@
+# 2. list of items
+$items
+arrow:5
+woodenArc:1
+stick:1
+$items_end
+# 3. room description
+$description:Room 10
+# 5. is it locked?
+$locked:true

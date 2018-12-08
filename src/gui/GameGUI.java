@@ -9,8 +9,11 @@ public class GameGUI extends JFrame {
   public JTextField command_line = new JTextField();
   public JTextArea output = new JTextArea();
   public JTextArea room_info = new JTextArea();
+  public JTextArea stat_info = new JTextArea();
+  public JTextArea map_info = new JTextArea();
   public boolean textInBuffer = false;
   public String bufferText = "null";
+  public JScrollPane output_scroll;
 
   //constructor
   public GameGUI() {
@@ -100,7 +103,8 @@ public class GameGUI extends JFrame {
     console_display.setBackground(Color.black);
     pane.add(console_display);
     	//scroll holder
-    JScrollPane output_scroll = new JScrollPane(output);
+    	//making scroll pane a global field
+    output_scroll = new JScrollPane(output);
     output_scroll.setLocation(0,0);
     output_scroll.setSize(console_display.getSize());
     //invisible scrollbar
@@ -132,7 +136,7 @@ public class GameGUI extends JFrame {
     stat_display.setLocation(0, 0);
     stat_display.setSize(hud_width,panelHeight/3);
 //    stat_display.setBackground(Color.orange.brighter());
-    stat_display.setBackground(Color.black);
+    stat_display.setBackground(Color.white);
     hud.add(stat_display);
     	//map
     JPanel map = new JPanel();
@@ -140,7 +144,7 @@ public class GameGUI extends JFrame {
     map.setLocation(0, stat_display.getHeight());
     map.setSize(hud_width,panelHeight/3);
 //    map.setBackground(Color.orange.darker());
-    map.setBackground(Color.black);
+    map.setBackground(Color.white);
     hud.add(map);
     
     	//room_description (Panel)
@@ -163,7 +167,33 @@ public class GameGUI extends JFrame {
     room_info.setForeground(Color.WHITE);
     room_description.add(room_info);
     
+    	//stat_info
+    stat_info.setLayout(null);
+    stat_info.setLocation(5, 5);
+    stat_info.setSize(room_description.getWidth()-10, room_description.getHeight()-10);
+    stat_info.setFont(new Font("Courier New",Font.PLAIN,20));
+    stat_info.setLineWrap(true);
+    stat_info.setWrapStyleWord(true);
+    stat_info.setEditable(false);
+    stat_info.setBackground(Color.black);
+    stat_info.setForeground(Color.white);
+    stat_display.add(stat_info);
     
+    	//map_info
+    map_info.setLayout(null);
+    map_info.setLocation(5, 5);
+    map_info.setSize(room_description.getWidth()-10, room_description.getHeight()-10);
+    map_info.setFont(console_font);
+    map_info.setLineWrap(true);
+    map_info.setWrapStyleWord(true);
+    map_info.setEditable(false);
+    map_info.setBackground(Color.black);
+    map_info.setForeground(Color.white);
+    map.add(map_info);
+    
+    //JLabel label = new JLabel();
+    //label.setIcon(new ImageIcon("src/images/map.png"));
+    //map.add(label);
     
     setVisible(true); // display this frame
   }

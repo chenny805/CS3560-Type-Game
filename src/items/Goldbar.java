@@ -5,7 +5,7 @@ public class Goldbar  implements Passive{
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return "A big piece of gold, it weights a decent amount and it shines underneath sunlight.";
+		return null;
 	}
 
 	@Override

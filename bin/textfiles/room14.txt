@@ -1,0 +1,8 @@
+# 2. list of items
+$items
+apple:2
+$items_end
+# 3. room description
+$description:Room 14
+# 5. is it locked?
+$locked:true
