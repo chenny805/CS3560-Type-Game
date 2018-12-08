@@ -5,19 +5,19 @@ public class PorkRib implements Edible {
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return null;
+		return "A leftover piece of porkrib. It looks burnt and cold. Must have been left out for a while";
 	}
 
 	@Override
 	public int getHeatlhValue() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 2;
 	}
 
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Pork Rib";
 	}
 
 }

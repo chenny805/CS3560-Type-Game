@@ -5,7 +5,8 @@ public class Coin  implements Passive {
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return null;
+		return "A small coin. Looks like it's made of silver. "
+				+ "Has a lot of wear and quite dirty. ";
 	}
 
 	@Override
@@ -18,11 +19,6 @@ public class Coin  implements Passive {
 	public void deactivate() {
 		// TODO Auto-generated method stub
 		
-	}
-	@Override
-	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

@@ -5,7 +5,7 @@ public class Plate  implements Passive {
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return null;
+		return "A small and dirty plate. It looks like somebody used it and left it here.";
 	}
 
 	@Override
@@ -18,11 +18,6 @@ public class Plate  implements Passive {
 	public void deactivate() {
 		// TODO Auto-generated method stub
 		
-	}
-	@Override
-	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }
